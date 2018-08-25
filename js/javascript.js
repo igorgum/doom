@@ -42,12 +42,17 @@ function desliga(e){
 }
 
 function liga(idioma){
-  console.log("liguei");
   if (idioma==1){
-    document.getElementById("eng").style.display = "initial";
+    var timeoute = setTimeout(function(){
+      document.getElementById("eng").style.display = "initial";
+      document.getElementById("inimigo1").style.display = "none";
+      document.getElementById("inimigo2").style.display = "none";
+    },300);
   }else{
-    document.getElementById("pt").style.display = "initial";
+    var timeoute = setTimeout(function(){
+      document.getElementById("pt").style.display = "initial";
+      document.getElementById("inimigo1").style.display = "none";
+      document.getElementById("inimigo2").style.display = "none";
+    },300);
   }
-  document.getElementById("inimigo1").style.display = "none";
-  document.getElementById("inimigo2").style.display = "none";
 }
