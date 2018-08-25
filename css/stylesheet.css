@@ -1,0 +1,83 @@
+@font-face {
+    font-family: fonteDoom;
+    src: url(../fonts/DooM.ttf) format("truetype");
+}
+
+#arma{
+  position: fixed;
+  width:40%;
+  z-index: 0;
+  opacity: 1;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+#arma2{
+  position: fixed;
+  width:40%;
+  z-index: 0;
+  opacity: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+#hud{
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin:0 auto;
+  bottom: 0;
+}
+
+body{
+  background: url(../img/e1m1.gif)repeat-y center center fixed;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+inimigosWrapper{
+  width: 100%;
+  padding-top: 25vh;
+  margin: 0 auto;
+  display: grid;
+  color: blue;
+  grid-template-areas: "inimigo1 inimigo2";
+}
+
+.inimigo{
+  text-align:center;
+  font-family: 'fonteDoom';
+  color: red;
+  font-size:larger;
+  text-shadow: 2px 2px black;
+}
+
+inimigosWrapper img{
+  width: 50%;
+  height: auto;
+}
+
+.card{
+  background:url(../img/interpic.png); 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: repeat;
+  max-height:50%;
+  z-index:4;
+  cursor: default;
+}
+
+.scrolling {
+            overflow-y: scroll;
+            height: 200px;
+            padding: 2px;
+}
