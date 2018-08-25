@@ -44,7 +44,8 @@ body{
 
 @media only screen and (max-width: 600px) {
   body{
-    height: 100vh;  
+    height: 100vh;
+  }
 }
 
 inimigosWrapper{
@@ -92,4 +93,12 @@ inimigosWrapper img{
             overflow-y: scroll;
             height: 25vh;
             padding: 2px;
+    }
+    .inimigo img {
+            height: 40vh;
+            width: 35vh;
+    }
+    #arma{
+            height:40vh;
+    }
 }
