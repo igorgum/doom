@@ -6,7 +6,7 @@
 #arma{
   position: fixed;
   width:40%;
-  z-index: 0;
+  z-index: 1;
   opacity: 1;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -16,7 +16,7 @@
 #arma2{
   position: fixed;
   width:40%;
-  z-index: 0;
+  z-index: 1;
   opacity: 0;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -95,8 +95,8 @@ inimigosWrapper img{
             padding: 2px;
     }
     .inimigo img {
-            height: 40vh;
-            width: 35vh;
+            height: 30vh;
+            width: 25vh;
     }
     #arma{
             height:40vh;
